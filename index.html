@@ -16,23 +16,37 @@
             <!-- TODO: Set Action and Method Properties -->
             <div>
                 <label for="firstname">Your First Name</label>
-                <input type="text" id="firstname" name="firstname">
+                <span class="required-field">*</span>
+                <input type="text" id="firstname" name="firstname" minlength="2" maxlength="35">
                 <!-- TODO: Create a "lastname" input with type "text" -->
                  <label for="lastname">Your Last Name</label>
-                 <input type="text" id="lastname" name="lastname">
+                 <span class="required-field">*</span>
+                 <input type="text" id="lastname" name="lastname" minlength="2" maxlength="35">
+
+                 <label for="age">Your Age</label>
+                 <span class="required-field">*</span>
+                 <input type="number" id="age" name="age" minlength="21" maxlength="120">
+
+                 <h5>*Must be 21 years or older to enter*</h5>
+
+
             </div>
             <!-- TODO: Make fieldset and legend -->
              <fieldset>
                 <legend>Your Contact Info</legend>
 
                 <label for="email">Your Email</label>
+                <span class="required-field">*</span>
                 <input type="email" id="email" name="email">
+
 
                 <label for="address">Your Street Address</label>
                 <input type="text" id="address" name="address">
+
                 
                 <label for="city">Your City</label>
                 <input type="text" id="city" name="city">
+
 
                     <select name="state"> 
                         <option value="AL">Alabama</option>
@@ -87,7 +101,7 @@
                     </select>
 
                 <label for="zip">Your Zipcode</label>
-                <input type="text" id="zip" name="zip">
+                <input type="number" id="zip" name="zip">
 
              </fieldset>
 
